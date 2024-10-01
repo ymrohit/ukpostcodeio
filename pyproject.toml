@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ukpostcodeio"
+version = "1.0.0"
+description = "A Python client for the Postcodes.io API used for UK postcodes"
+readme = "README.md"
+#readme-content-type = "text/markdown"
+authors = [
+    { name="Rohit Yelukati Mahendra", email="rohityelukati@gmail.com" }
+]
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: MIT License",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries",
+]
+dependencies = [
+    "requests>=2.23.3",
+]
+requires-python = ">=3.7"
+keywords = ["postcode", "uk", "postcodes.io", "api", "client"]
