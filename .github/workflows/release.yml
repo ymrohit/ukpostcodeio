@@ -13,7 +13,7 @@ jobs:
 
     steps:
     - name: Checkout Repository
-      uses: actions/checkout@v4.3.0  # Exact version of checkout action
+      uses: actions/checkout@v4.2.0  # Exact version of checkout action
 
     - name: Set up Python
       uses: actions/setup-python@v4.4.0  # Exact version of setup-python action
@@ -45,7 +45,7 @@ jobs:
 
     - name: Create GitHub Release
       if: startsWith(github.ref, 'refs/tags/')
-      uses: actions/create-release@v1.6.0  # Exact version of create-release action
+      uses: actions/create-release@v1.1.4  # Exact version of create-release action
       with:
         tag_name: ${{ github.ref_name }}          # Correctly extracted tag name
         release_name: Release ${{ github.ref_name }}  # Correctly extracted release name
