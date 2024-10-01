@@ -10,7 +10,6 @@ jobs:
     runs-on: ubuntu-22.04  # Specifies the exact Ubuntu version
     permissions:
       contents: read        # Read access to repository contents
-      releases: write       # Write access to create releases
 
     steps:
     - name: Checkout Repository
