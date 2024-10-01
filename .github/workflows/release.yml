@@ -23,7 +23,7 @@ jobs:
           cache: 'pip'             # Enables pip caching
 
       - name: Cache pip Dependencies
-        uses: actions/cache@v3.15.3  # Exact version of cache action
+        uses: actions/cache@v4.0.2  # Exact version of cache action
         with:
           path: ~/.cache/pip
           key: ${{ runner.os }}-pip-${{ hashFiles('requirements-dev.txt', 'setup.py', 'pyproject.toml') }}
